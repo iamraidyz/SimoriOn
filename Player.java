@@ -159,7 +159,7 @@ public class Player implements Runnable{
 			long startTime = System.nanoTime();
 			//System.out.println("Seq start+tempo: "+sequencer.getTempoInBPM());
 		sequencer.open();
-		sequencer.setTempoInBPM(120);
+		sequencer.setTempoInBPM(currentLayer.tempo);
 		sequencer.setSequence(seq);
 		sequencer.start();
 		synchronized(this){

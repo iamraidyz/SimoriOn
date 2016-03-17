@@ -59,7 +59,7 @@ public class ClockHand implements Runnable {
 				
 				view.illuminateClockHand(i, false);
 				i++;
-				if(i==16){i=0;
+				if(i==layer.loopPoint){i=0;
 				
 				synchronized(this.layer.player){
 					try {

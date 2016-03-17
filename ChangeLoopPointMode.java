@@ -10,9 +10,7 @@ import simoriOn.GUI.MatrixButton;
  * @author James Badham
  */
 public class ChangeLoopPointMode extends Mode{
-    
-    Layer layer;
-    
+        
     /**
      * Change loop point mode constructor.
      * @author James Badham
@@ -75,7 +73,7 @@ public class ChangeLoopPointMode extends Mode{
         MatrixButton button = (MatrixButton) mB;
         int column = button.x;
         super.getView().illuminate_column(column, true);
-        layer.loopPoint = column; 
+        super.getController().currentLayer.loopPoint = column;
     }
     
     
